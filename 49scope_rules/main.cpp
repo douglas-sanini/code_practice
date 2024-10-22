@@ -63,3 +63,4 @@ int main()
     static_local_example();
     //behaves like a global variable but it's scope is local
 }
+

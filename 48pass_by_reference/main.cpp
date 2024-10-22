@@ -4,12 +4,12 @@
 
 using namespace std;
 
-void pass_by_ref1(int &num);
+void pass_by_ref1(int num);
 void pass_by_ref2(int &s); 
 void pass_by_ref3(vector<string> &v);
 void print_vector(const vector<string> &v); //const
 
-void pass_by_ref1(int &num)
+void pass_by_ref1(int num)
 {
     num = 1000;
 }
@@ -45,6 +45,8 @@ int main()
     cout << "num before calling pass_by_ref1:" << num << endl;
     pass_by_ref1(num);
     cout << "num after calling pass_by_ref1:" << num << endl;
+    pass_by_ref1(num);
+    cout << "num after calling pass_by_ref1 twice:" << num << endl;
 
     cout << "\nanother_num before calling pass_by_ref1: " << another_num << endl;
     pass_by_ref1(another_num);
