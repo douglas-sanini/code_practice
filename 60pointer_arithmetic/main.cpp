@@ -44,11 +44,12 @@ int main() {
 
     char *char_ptr1{nullptr};
     char *char_ptr2{nullptr};
-
+    char *char_ptr3{nullptr};
+    
     char_ptr1 = &name[0]; //F
     char_ptr2 = &name[3]; //n
-
-    cout << "In the string " << name << ", " << *char_ptr2 << " is " << (char_ptr2 - char_ptr1) << " characters away from " << *char_ptr1 << endl;
+    char_ptr3 = &name[5]; //k
+    cout << "In the string " << name << ", " << *char_ptr3 << " is " << (char_ptr3 - char_ptr1) << " characters away from " << *char_ptr1 << endl;
 
     cout << endl;
     return 0;
