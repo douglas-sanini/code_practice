@@ -32,13 +32,36 @@
 using namespace std;
 
 
+string reverse_string(const string& str) {
+    string reversed_str;
 
-string reverse_string(const string &str) {
-  
+    // Pointer to the last character of the string
+    const char* ptr = &str[str.size() - 1];
+    cout << ptr << endl;
+    cout << *ptr << endl;
+
+    // Traverse the string in reverse order
+    while (ptr >= &str[0]) {
+        // Append each character to the new string
+        reversed_str.push_back(*ptr);
+        // cout << ptr << endl;
+        // cout << *ptr << endl;
+
+        // Move the pointer one step left
+        --ptr;
+    }
+
+    return reversed_str;  // Return the reversed string
 }
+
+
 
 int main(){
 
-    char name[] = "Frank";
+    string greeting = "Hello, World!";
+
+    string reversed;
+    reversed = reverse_string(greeting); 
+    cout << reversed << endl;
     return 0;
 }
