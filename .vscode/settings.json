@@ -35,7 +35,8 @@
     "vscodevim.vim": 1
   },
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   }
 }
 
